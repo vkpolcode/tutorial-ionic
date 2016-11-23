@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Action Sheets Ionic Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Some Examples of components using</h3>
+  <p>
+    <button block ion-button (click)="showBasic()">Show Basic Usage</button>
+  </p>
+  <p>
+    <button full ion-button (click)="showPrompt()" color="light">Show Prompt Usage</button>
+  </p>
+  <p>
+    <button ion-button (click)="showConfirm()" color="secondary" round>Show Confirm Usage</button>
+  </p>
+  <p>
+    <button ion-button (click)="showRadio()" color="danger" outline>Show Radio Usage</button>
+  </p>
+  <p>
+    <button ion-button (click)="showCheckbox()" color="dark" outline>Show Checkbox Usage</button>
+  </p>
+  <ion-item>
+    <ion-icon name="logo-twitter" item-left></ion-icon>
+    Followers
+    <ion-badge item-right >260k</ion-badge>
+    <ion-badge item-right color="secondary">261k</ion-badge>
+  </ion-item>
+</ion-content>

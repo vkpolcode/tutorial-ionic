@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Action Sheets Ionic Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Some Examples of components using</h3>
+
+  <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tapped: {{ tap }} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Pressed: {{ press }} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (pan)="panEvent($event)">
+    <ion-item>
+      Panned: {{ pan }} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Swipped: {{ swipe }} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (rotate)="rotateEvent($event)">
+    <ion-item>
+      Rotated: {{ rotate }} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (pinch)="pinchEvent($event)">
+    <ion-item>
+      Pinched: {{ pinch }} times
+    </ion-item>
+  </ion-card>
+
+</ion-content>
